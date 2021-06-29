@@ -1,5 +1,8 @@
 #Back-End for CARBON ©
+
+
 Présentation du projet:
+
 La pollution générée par l’industrie du net et son impact sur le climat sont équivalents à ceux du secteur de l’aviation.
 
 L'empreinte écologique du numérique est loin d'être négligeable même si elle paraît anodine comparée à d'autres secteurs et qu'il est difficile de croire que l'on puisse "polluer" en surfant sur Internet et pourtant c'est ce qui se passe !
@@ -16,6 +19,8 @@ Organisation du projet:
 En ce qui concerne l'organisation, nous avons opté d'utiliser l'application Notion, nous avons mis en place plusieurs workspaces (calendrier, data ...), et delà une mise à jour quotidienne été établie, ce qui nous permettait de suivre l'avancement de notre projet. Nous avons bien séparé la partie Front et Back. @Youness a choisi les technos coté back et front. @Nassim s'est principalement occupé seul de la partie back et de la recherche de la data-écologique avec l'aide de @Tania. Nous avons séparé en deux branches une dev et une prod, tous les test se sont fait en local.
 
 Technologies côté back-end:
+
+
 Docker est un logiciel libre permettant de créer des contenuers logiciels. Dans une équipe, chaque personne a différent système d'exploitation, et des versions différentes, cela peut créer des problèmes en productions. L'avantage de Docker est de permettre de créer et travailler dans un environnement qui tourne dans tout type d'ordinateur et serveur, ce dernier nous a beaucoup facilité l'hébergement de notre API avec un seul ligne de commande, on a pu héberger notre API sur DigitalOcean sur un Droplet(serveur Linux Ubunto aui vient avec Docker et Git installés.), pour transfer les fichier de notre machine en local au serveur en 138.68.103.215, on a utilisé git avec un git pull origin proden suite on a lancé la container de l'application basé sur Python v3.9 avec la commande docker compose up.
 
 FastAPI est un framework web pour construire des API sur Python. Il est très rapide et simple d'utilisation, avec une documentation bien construite. (c'est comme Flask pour les connaisseurs)
